@@ -7,7 +7,7 @@ RUN apk add --no-cache git curl bash gpg sudo
 # Set the argument for user id and group id
 ARG USER_ID=1000
 ARG GROUP_ID=1000
-RUN mkdir /home/vscode/app
+RUN mkdir /home/vscode/app -p
 # Create a new group using the provided group id and create a new user 'vscode' with the provided user id in that group
 RUN addgroup -g $GROUP_ID vscode \
     && adduser -D -u ${USER_ID} -G vscode vscode \
