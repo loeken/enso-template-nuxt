@@ -4,4 +4,5 @@ cd frontend
 mv * ..
 cat .gitignore >> ../.gitignore
 mv .npmrc ..
+cd ..
 rm -rf frontend
