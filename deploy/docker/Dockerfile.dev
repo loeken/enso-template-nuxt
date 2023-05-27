@@ -21,7 +21,7 @@ RUN chown -R vscode:vscode /home/vscode /app
 
 # install nodejs/npm/pnpm
 USER root
-RUN apk add --no-cache nodejs npm
+RUN apk add --no-cache nodejs npm docker docker-compose
 RUN npm install -g pnpm
 
 # switch to non root user

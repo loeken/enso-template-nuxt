@@ -1,26 +1,24 @@
 version: '3'
 services:
-  app:
-    container_name: app
+  myapp:
+    container_name: myapp
     build:
       context: .
       dockerfile: ./deploy/docker/Dockerfile.dev
       args:
-        - USER_ID=${USER_ID}
-        - GROUP_ID=${GROUP_ID}
+        - USER_ID=1000
+        - GROUP_ID=1000
     ports: 
-      - 8080:8080 
-      - 4000:4000 
-      - 6060:6060 
+      - 3000:3000
     restart: on-failure
     networks:
-      - fullstack
+      - myapp-network
     volumes:
       - ${HOME}/.config/gh:/home/vscode/.config/gh
       - ${HOME}/.ssh:/home/vscode/.ssh
   
 # Networks to be created to facilitate communication between containers
 networks:
-  fullstack:
+  myapp-network:
     driver: bridge
 
