@@ -1,0 +1,5 @@
+.devcontainer
+deploy/**
+.dockerignore
+docker-compose.yml
+README.md

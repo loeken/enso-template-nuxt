@@ -28,4 +28,8 @@ RUN npm install -g pnpm
 USER vscode
 WORKDIR /app
 
+COPY --chown=vscode:vscode package.json .
+RUN pnpm install --shamefully-hoist
+COPY . .
+
 CMD ["tail", "-f", "/dev/null"]
