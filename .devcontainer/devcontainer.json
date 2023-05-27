@@ -1,0 +1,24 @@
+{
+    "name": "enso-template-vue",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "app",
+    "workspaceFolder": "/app",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode-remote.vscode-remote-extensionpack",
+                "ms-vscode-remote.remote-containers",
+                "github.codespaces",
+                "github.vscode-pull-request-github",
+                "hollowtree.vue-snippets",
+                "sdras.vue-vscode-snippets",
+                "editorconfig.editorconfig",
+                "dbaeumer.vscode-eslint",
+                "bradlc.vscode-tailwindcss",
+                "vue.vscode-typescript-vue-plugin",
+                "vue.volar",
+                "rangav.vscode-thunder-client"
+            ]
+        }
+    }
+}
