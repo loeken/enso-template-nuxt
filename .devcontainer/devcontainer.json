@@ -2,7 +2,7 @@
     "name": "enso-template-vue",
     "dockerComposeFile": "../docker-compose.yml",
     "service": "myapp",
-    "workspaceFolder": "/app",
+    "workspaceFolder": "/home/vscode/app",
     "customizations": {
         "vscode": {
             "extensions": [
