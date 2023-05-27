@@ -1,4 +1,4 @@
-# enso-template-vue
+# enso-template-nuxt
 
 ## first launch
 
@@ -7,3 +7,5 @@ when opening this folder in vscode the first time dont jump into devcontainers s
 ```
 ./create_project.sh
 ```
+
+now you can open it in a devcontainer
