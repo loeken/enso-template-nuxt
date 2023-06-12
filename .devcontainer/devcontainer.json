@@ -20,5 +20,6 @@
                 "rangav.vscode-thunder-client"
             ]
         }
-    }
+    },
+    "postCreateCommand": "./create_project.sh"
 }
